@@ -6,8 +6,8 @@ namespace Open_Lab_11._00
 {
     class Library
     {
-        public int numberOfBooks;
-        public int numberOfStudents;
+        public int numberOfBooks = 4;
+        public int numberOfStudents = 2;
         public string[] studentsList = new string[2]
         {
         "", "" 
@@ -25,7 +25,7 @@ namespace Open_Lab_11._00
                 {
                 Console.WriteLine(student);
                 }
-            Console.WriteLine("Titles of books:");
+            Console.WriteLine("Tites of books:");
             foreach (var title in booksList)
                 {
                 Console.WriteLine(title);
