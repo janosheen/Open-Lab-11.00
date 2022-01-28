@@ -78,13 +78,15 @@ namespace Open_Lab_11._00
             }
         }
 
-        public void Write()
+        public override string ToString()
         {
-            Console.WriteLine("Názov: " + Title);
-            Console.WriteLine("Počet strán: " + Pages);
-            Console.WriteLine("Žáner: " + Cathegory);
-            Console.WriteLine("Autor: " + Author);
-            Console.WriteLine("Dátum vydania: " + ReleaseDate);
+            string str = "";
+            str =(" Názov:" + Title);
+            str +=("  Počet strán:" + Pages);
+            str+=("  Žáner:" + Cathegory);
+            str+=("  Autor:" + Author);
+            str+=("  Dátum vydania:" + ReleaseDate);
+            return str;
         }
     }
 }

@@ -12,24 +12,23 @@ namespace Open_Lab_11._00
         {
         "", "" 
         };
-        public string[] booksList = new string[4] 
-        { 
-        "", "", "", "" 
-        };
-        public void Write()
+        public Book[] booksList = new Book[4];
+        public override string ToString()
         {
-            Console.WriteLine("Number of books in library:" + numberOfBooks);
-            Console.WriteLine("Number of students in library:" + numberOfStudents);
-            Console.WriteLine("Names of students who have borrowed our books:");
+            string s = "";
+            s = ("Number of books in library:" + numberOfBooks);
+            s += ("Number of students in library:" + numberOfStudents);
+            s += ("Names of students who have borrowed our books:");
             foreach (string student in studentsList)
                 {
-                Console.WriteLine(student);
+                s+=(student);
                 }
-            Console.WriteLine("Tites of books:");
-            foreach (var title in booksList)
+            s+=("Tites of books:");
+            foreach (Book title in booksList)
                 {
-                Console.WriteLine(title);
+                s+=(title);
                 }
+            return s;
         }
 
     }
